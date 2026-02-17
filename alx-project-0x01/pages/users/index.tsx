@@ -9,7 +9,7 @@ const Users: React.FC<{ posts: UserProps[] }> = ({ posts }) => {
       <main className="p-4">
         <h1 className="text-2xl font-semibold mb-4">Users</h1>
         <div className="grid grid-cols-3 gap-4">
-          {posts?.map((user: UserProps, key: number) => (
+          {posts.map((user: UserProps, key: number) => (
             <UserCard
               key={key}
               id={user.id}
